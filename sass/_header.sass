@@ -1,0 +1,151 @@
+.header
+    &__container
+        width: 1200px
+        margin: auto
+        display: flex
+        justify-content: start
+        padding: 52px 0 30px
+    &__block
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        background: #22252E
+        padding: 8px 40px
+    &__warning
+        font-weight: 700
+        font-size: 12px
+        line-height: 16px
+        color: $orange
+    &__IP
+        margin: 0 32px
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        color: $gray
+    &__more
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        color: #fff
+        text-decoration: none
+    &__close
+        position: absolute
+        border: none
+        background: none
+        right: 10px
+        cursor: pointer
+    &__burger
+        display: none
+    &__name
+        +Text500 
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+    &__menu
+        margin-left: 200px
+    &__link
+        +Text500
+        padding-bottom: 5px
+        margin-right: 50px
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: 1px
+        text-transform: uppercase
+        color: #323642
+        text-decoration: none
+        &-arrow
+            &::after
+                content: ' '
+                display: inline-block
+                margin-left: 8px
+                margin-top: 5px
+                vertical-align: top
+                width: 10px
+                height: 10px
+                background: url('../img/header/down.png') no-repeat center
+                background-size: 100%
+        &-active
+            border-bottom: 3.5px solid $green
+    &__authorization
+        position: absolute
+        width: 250px
+        top: 80px
+        right: 100px
+    &_btn
+        +Text500
+        padding: 11px 20px
+        font-size: 14px
+        line-height: 18px
+        text-align: center
+        letter-spacing: 0.8px
+        text-transform: uppercase
+        border-radius: 30px
+        cursor: pointer
+    &__login
+        color: $green
+        background: none
+        border: 1px solid #4CB649
+        margin-right: 15px
+    &__started
+        color: #fff
+        background: $green
+        border: 1px solid #4CB649
+
+.close
+    display: none
+.getup
+    top: 50px
+@media (max-width: 1250px)
+    .header
+        &__container
+            max-width: 960px
+        &__menu
+            margin-left: 40px
+        &__authorization
+            right: 45px
+@media (max-width: 1000px)
+    .header
+        &__container
+            max-width: 750px
+        &__menu
+            display: none
+        &__burger
+            display: block
+            background: none
+            border: none
+            margin: 5px 15px 0
+            cursor: pointer
+    .getup
+        top: 40px
+@media (max-width: 768px)
+    .header
+        &__container
+            position: relative
+            max-width: 100%
+            padding: 30px 0 
+        &__authorization
+            top: 50%
+            transform: translateY(-50%)
+            right: 15px
+@media (max-width: 450px)
+    .header
+        &__block
+            justify-content: center
+            padding: 8px 0px 8px 20px
+        &__warning
+            width: 90%
+        &__more
+            position: absolute
+            left: 70%
+            top: 15px
+        &__IP
+            margin: 10px 20px 0 0
+        &__close
+            top: 13px
+        &__login
+            display: none
+        &__authorization
+            width: auto
+

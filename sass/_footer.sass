@@ -1,0 +1,99 @@
+.footer
+    position: relative
+    padding-bottom: 30px
+    &__title
+        margin: 50px 0 30px
+        font-size: 27px
+        line-height: 33px
+        text-align: left
+        color: #000000
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__one
+        display: flex
+        justify-content: space-between
+        width: 350px
+    &__two
+        width: 140px
+    &__three
+        width: 580px
+    &__subtitle
+        +Text500
+        margin-bottom: 20px
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: 1px
+        text-transform: uppercase
+        color: #000000
+    &__link
+        display: block
+        margin-bottom: 10px
+        +Text500
+        font-size: 14px
+        line-height: 22px
+        color: #889099
+        text-decoration: none
+        &-img
+            text-decoration: none
+            margin-right: 30px
+    &__links
+        display: flex
+        justify-content: start
+        align-items: center
+    &__text
+        +Text400
+        font-size: 14px
+        line-height: 22px
+        color: #889099
+    &__block
+        margin-top: 20px
+@media (max-width: 1250px)
+    .footer
+        &__one
+            width: 300px
+        &__two
+            width: 140px
+        &__three
+            width: 450px
+@media (max-width: 1000px)
+    .footer
+        &__title
+            margin-left: 30px
+        &__content
+            padding-left: 30px
+            justify-content: start
+        &__one
+            width: 300px
+        &__two
+            margin-left: 200px
+        &__three
+            margin-top: 50px
+@media (max-width: 768px)
+    .footer
+        &__one
+            
+        &__two
+            width: 90%
+            margin-top: 50px
+            margin-left: 0
+@media (max-width: 450px)
+    .footer
+        &__one
+            
+        &__two
+            width: 90%
+            margin-top: 50px
+            margin-left: 0
+        &__block
+            position: absolute
+            top: 470px
+            width: 140px
+            left: 60%
+        &__links
+            justify-content: space-between
+            flex-wrap: wrap
+        &__link-img
+            margin-top: 10px
+            margin-right: 10px      

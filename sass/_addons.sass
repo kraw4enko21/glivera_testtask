@@ -1,0 +1,83 @@
+.addons
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 20px
+        height: 400px
+        border: 1px solid #D7D8D9
+        border-radius: 6px
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.101961)
+    &__left
+        width: 50%
+    &__right
+        padding: 60px 60px 0
+        width: 50%
+
+    &__title
+        margin-bottom: 84px
+        font-weight: 300
+        font-size: 24px
+        line-height: 34px
+        color: #22252E
+.author
+    +Text500
+    font-size: 14px
+    line-height: 22px
+    color: #323642
+.date
+    font-weight: 400
+    font-size: 14px
+    line-height: 22px
+    color: #889099
+.subtitle
+    margin: 12px 0
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $green
+.number
+    font-weight: 400
+    font-size: 14px
+    line-height: 22px
+    color: #889099
+    &::before
+        content: ' '
+        display: inline-block
+        margin-right: 10px
+        vertical-align: middle
+        width: 20px
+        height: 20px
+        background: url('../img/addons/comment.png') no-repeat center
+        background-size: 100%
+@media (max-width: 1250px)
+    .addons
+        &__content
+            height: 315px
+        &__left
+            width: 49%
+        &__right
+            padding: 20px 20px 0
+            width: 49%
+        &__title
+            margin-bottom: 20px
+@media (max-width: 1000px)
+    .addons
+        padding-bottom: 20px
+        &__content
+            width: 55%
+            margin: auto
+            height: auto
+            justify-content: center
+            border: none
+        &__left
+            width: 100%
+        &__right
+            padding: 20px 20px 0
+            width: 100%
+@media (max-width: 768px)
+    .addons
+        &__content
+            width: 95%

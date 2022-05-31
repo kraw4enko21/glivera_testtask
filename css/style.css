@@ -689,6 +689,9 @@ img {
   .blog__right-3 {
     width: 95%;
   }
+  .blog__miniblock {
+    width: 90%;
+  }
 }
 
 .modalone__content {

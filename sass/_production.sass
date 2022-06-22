@@ -1,0 +1,163 @@
+.production
+    margin-top: 80px
+    display: flex
+    justify-content: space-between
+    height: 616px
+    &__left
+        position: relative
+        width: 570px
+        background: url('../img/Production/production_bg.png') center bottom no-repeat
+        background-size: contain
+    &__right
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 570px
+    &__text
+        &-first
+            position: absolute
+            padding: 60px 30px 56px
+            bottom: 0
+            right: 0
+            width: 285px
+            height: 332px
+            color: white
+            background: #1B5FC1
+            font-size: 15px
+            line-height: 24px
+        &-second
+            width: 285px
+            height: 332px
+            padding: 80px 30px 132px
+            background: #fff
+            font-size: 15px
+            line-height: 24px
+            color: #575C74
+        &-three
+            width: 285px
+            height: 332px
+            padding: 80px 30px 132px
+            font-size: 15px
+            line-height: 24px
+            color: #FFFFFF
+            background: #1B5FC1
+            border-radius: 0px 20px 0px 0px
+        &-four
+            width: 570px
+            height: 284px
+            padding-top: 45px
+            padding-left: 38px
+            background: #FFB800
+            border-radius: 0px 0px 20px 0px
+    &__title
+        +Rubic700
+        font-size: 20px
+        line-height: 50px
+        color: #0C122D
+    &__subtext
+        margin-bottom: 25px
+        font-size: 15px
+        line-height: 24px
+        color: #000000
+    &__info
+        display: flex
+    &__btn
+        background: inherit
+        border: 1px solid #1B5FC1
+        color: #1B5FC1
+        vertical-align: middle
+    &__block
+        margin-left: 40px
+        padding-left: 40px
+        border-left: 2px solid white
+    &__miniblock
+        display: inline-block
+        margin-left: 10px
+    &__subtitle
+        font-weight: 600
+        font-size: 14px
+        line-height: 24px
+        color: #1B5FC1
+    &__phone
+        font-weight: 600
+        font-size: 24px
+        line-height: 24px
+        color: #000000
+
+    
+@media (max-width: 1150px)
+    .production
+        height: 500px
+        &__left
+            width: 50%
+        &__right
+            width: 50%
+        &__text
+            &-first
+                padding-top: 20px
+                width: 50%
+                height: 280px
+            &-second
+                width: 50%
+                height: 250px
+                padding-top: 40px
+            &-three
+                width: 50%
+                height: 250px
+                padding-top: 40px
+            &-four
+                width: 100%
+                height: 250px
+                padding-top: 20px
+        &__block
+            margin-left: 20px
+            padding-left: 20px
+        &__phone
+            font-size: 20px
+@media (max-width: 1000px)
+    .production
+
+        flex-wrap: wrap
+        justify-content: center
+        &__left
+            display: none
+        &__right
+            width: 100%
+            height: 500px
+        &__text
+            &-second
+                width: 50%
+                height: 250px
+                padding-top: 40px
+            &-three
+                width: 50%
+                height: 250px
+                padding-top: 40px
+            &-four
+                width: 100%
+                height: 250px
+                padding-top: 20px
+        &__block
+            margin-left: 20px
+            padding-left: 20px
+        &__phone
+            font-size: 20px
+@media (max-width: 440px)
+    .production
+        &__text
+            &-second
+                padding: 12px
+                font-size: 15px
+                line-height: 20px
+            &-three
+                padding: 12px
+                font-size: 15px
+                line-height: 20px
+            &-four
+                max-height: 350px
+                padding: 0 10px 20px 15px
+        &__block
+            margin-left: 10px
+            padding-left: 10px
+        &__phone
+            font-size: 15px

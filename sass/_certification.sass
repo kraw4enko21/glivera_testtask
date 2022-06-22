@@ -1,0 +1,33 @@
+.certification
+    padding-top: 50px
+    background: #F7FDFB
+    &__block
+        display: flex
+        justify-content: start
+        align-items: center
+    &__text
+        font-size: 15px
+        line-height: 24px
+        color: #575C74
+    &__line
+        width: 186px
+        height: 1px
+        margin-right: 40px
+        margin-left: 10px
+    &__img
+        margin: 0 50px
+@media (max-width: 1000px)
+    .certification
+        &__block
+            flex-wrap: wrap
+        &__line
+            display: none
+@media (max-width: 768px)
+    .certification
+        &__block
+            width: 100%
+            justify-content: space-around
+        &__img
+            margin: 15px
+
+

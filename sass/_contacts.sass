@@ -1,0 +1,51 @@
+.contacts
+    padding: 40px 0
+    background: #FFB800
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        display: flex
+        align-items: center
+        height: 53px
+        // & img
+        //     height: auto
+        &-second
+            width: 400px
+            padding: 0 100px
+            border-right: 1px solid white
+            border-left: 1px solid white
+    &__miniblock
+        padding-left: 10px
+    &__subtitle
+        +Rubic500
+        font-size: 20px
+        line-height: 30px
+        color: #0C122D
+    &__text
+        font-size: 15px
+        line-height: 20px
+        color: #0C122D
+    &__img
+        &-1
+            width: 25.6px
+            height: 32px
+        &-2
+            width: 32px
+            height: 32px
+        &-3
+            width: 32px
+            height: 22.86px
+@media (max-width: 1000px)
+    .contacts
+        &__content
+            justify-content: center
+        &__item
+            margin: 20px 50px
+@media (max-width: 550px)
+    .contacts
+        &__item
+            &-second
+                width: 300px
+                padding: 0 40px

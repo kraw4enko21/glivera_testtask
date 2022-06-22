@@ -1,18 +1,33 @@
 html
     scroll-behavior: smooth
 body
-    +Text
+    +Text400
 *
     padding: 0
     margin: 0
     box-sizing: border-box
-    
+.btn
+    +Rubic400
+    padding: 9px 25px 8px 24px
+    font-size: 14px
+    line-height: 30px
+    border: none
+    border-radius: 8px
+    cursor: pointer
+    &-blue
+        background-color: #1B5FC1
+        color: white
+    &-yellow
+        background: inherit
+        color: #FFB800
+        border: 1px solid #FFB800
+
 img
     max-width: 100%
 .container
-    max-width: 1200px
+    max-width: 1140px
     margin: auto
-@media (max-width: 1250px)
+@media (max-width: 1150px)
     .container
         max-width: 960px
 @media (max-width: 1000px)
@@ -21,4 +36,4 @@ img
 @media (max-width: 768px)
     .container
         max-width: 100%
-
+        padding: 10px

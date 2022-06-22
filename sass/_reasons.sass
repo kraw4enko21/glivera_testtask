@@ -1,0 +1,72 @@
+.reasons
+    background: #F7FDFB
+    padding-top: 100px
+    &__block
+        display: flex
+        justify-content: space-between
+    &__left
+        width: 400px
+    &__right
+        width: 700px
+        padding-left: 50px
+    &__title
+        +Rubic700
+        font-size: 48px
+        line-height: 50px
+        color: #0C122D
+    &__subtext
+        margin-top: 20px
+        font-size: 16px
+        line-height: 30px
+        color: #575C74
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 35px
+    &__item
+        display: flex
+        width: 300px
+        margin-top: 23px
+        & img
+            width: 56px
+            height: 56px
+    &__miniblock
+        padding-left: 20px
+    &__subtitle
+        +OpenBold
+        font-size: 20px
+        line-height: 28px
+        color: #0C122D
+    &__text
+        margin-top: 5px
+        font-size: 15px
+        line-height: 22px
+        color: #575C74
+.feedback
+    &__block
+        margin-top: 50px
+        text-align: center
+@media (max-width: 1150px)
+    .reasons
+        &__right
+            width: 560px
+            padding-left: 30px
+        &__item
+            width: 260px
+        &__content
+            margin-top: 20px
+@media (max-width: 1000px)
+    .reasons
+        &__block
+            justify-content: center
+        &__left
+            display: none
+        &__right
+            width: 90%
+@media (max-width: 768px)
+    .reasons
+        &__right
+            width: 95%
+    .feedback__block
+        display: none

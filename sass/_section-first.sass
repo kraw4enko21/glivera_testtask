@@ -1,0 +1,85 @@
+.section-first
+    background: url('../img/Offers/Vector.png') center left no-repeat
+    background-size: contain
+.offers
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 70px
+    margin-bottom: 130px
+    &__item
+        width: 270px
+        display: flex
+        justify-content: start
+    // &__left
+    //     width: 100px
+    &__right
+        width: 210px
+        padding-left: 10px
+    &__title
+        +Rubic700
+        font-size: 20px
+        line-height: 28px
+        color: #0C122D
+    &__text
+        margin-top: 15px
+        font-size: 15px
+        line-height: 22px
+        color: #575C74
+.respirators
+    display: flex
+    justify-content: space-between
+    margin-top: 80px
+    &__left
+        width: 49%
+    &__right
+
+        width: 49%
+        padding-left: 40px
+
+    &__title
+        +Rubic700
+        margin-bottom: 26px
+        font-size: 48px
+        line-height: 50px
+        color: #0C122D
+    &__text
+        font-size: 16px
+        line-height: 30px
+        color: #575C74
+@media (max-width: 1150px)
+    .offers
+        &__item
+            width: 220px
+    .respirators
+        &__text
+            font-size: 14px
+            line-height: 20px
+@media (max-width: 1000px)
+    .offers
+        justify-content: space-around
+        &__item
+            margin: 20px
+    .respirators
+        &__title
+            font-size: 30px
+            line-height: 40px
+            margin-bottom: 15px
+        &__text
+            font-size: 13px
+            line-height: 16px
+@media (max-width: 768px)
+    .offers
+        justify-content: center
+        &__item
+            width: 300px
+    .respirators
+        flex-wrap: wrap
+        justify-content: start
+        padding-left: 30px
+        &__left
+            width: 80%
+            margin: 20px 0
+        &__right
+            padding-left: 0
+            width: 90%
